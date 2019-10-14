@@ -25,6 +25,7 @@ export class ActionSheetPage implements OnInit {
         }
       }, {
         text: 'Share',
+        role: 'destructive',
         icon: 'share',
         handler: () => {
           console.log('Share clicked');
