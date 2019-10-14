@@ -7,8 +7,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  linkItems: LinkItem[] = [
+    {
+      icono: 'alert',
+      nombre: 'Alerta',
+      enlace: '/alert'
+    },
+    {
+      icono: 'logo-buffer',
+      nombre: 'Action Sheet',
+      enlace: '/action-sheet'
+    },
+    {
+      icono: 'list-box',
+      nombre: 'Card',
+      enlace: '/card'
+    }
+  ];
+
   constructor() { }
 
   ngOnInit() {}
 
+}
+
+interface LinkItem {
+  icono: string;
+  nombre: string;
+  enlace: string;
 }

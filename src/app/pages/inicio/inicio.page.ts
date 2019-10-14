@@ -8,24 +8,6 @@ import { MenuController } from '@ionic/angular';
 })
 export class InicioPage implements OnInit {
 
-  linkItems: LinkItem[] = [
-    {
-      icono: 'alert',
-      nombre: 'Alerta',
-      enlace: '/alert'
-    },
-    {
-      icono: 'logo-buffer',
-      nombre: 'Action Sheet',
-      enlace: '/action-sheet'
-    },
-    {
-      icono: 'list-box',
-      nombre: 'Card',
-      enlace: '/card'
-    }
-  ];
-
   constructor( private menuCtrl: MenuController ) { }
 
   toggleMenu() {
@@ -37,8 +19,3 @@ export class InicioPage implements OnInit {
 
 }
 
-interface LinkItem {
-  icono: string;
-  nombre: string;
-  enlace: string;
-}
