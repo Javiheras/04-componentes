@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-inicio',
@@ -17,10 +18,19 @@ export class InicioPage implements OnInit {
       icono: 'logo-buffer',
       nombre: 'Action Sheet',
       enlace: '/action-sheet'
+    },
+    {
+      icono: 'list-box',
+      nombre: 'Card',
+      enlace: '/card'
     }
   ];
 
-  constructor() { }
+  constructor( private menuCtrl: MenuController ) { }
+
+  toggleMenu() {
+    this.menuCtrl.toggle();
+  }
 
   ngOnInit() {
   }
