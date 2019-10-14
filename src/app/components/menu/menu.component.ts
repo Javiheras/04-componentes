@@ -22,6 +22,11 @@ export class MenuComponent implements OnInit {
       icono: 'list-box',
       nombre: 'Card',
       enlace: '/card'
+    },
+    {
+      icono: 'list-box',
+      nombre: 'Pestañas',
+      enlace: '/tabs'
     }
   ];
 
