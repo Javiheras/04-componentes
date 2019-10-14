@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-button href="/alert">Alert</ion-button>
+  <ion-button href="/action-sheet">Action Sheet</ion-button>
+  
+  <ion-list>
+    
+    <ion-item *ngFor="let linkItem of linkItems"
+          href="{{ linkItem.enlace }}">
+      <ion-icon slot="start" name="{{ linkItem.icono }}"></ion-icon>
+      <ion-label> {{ linkItem.nombre }} </ion-label>
+    </ion-item>
+     
+  </ion-list>
+
+</ion-content>
