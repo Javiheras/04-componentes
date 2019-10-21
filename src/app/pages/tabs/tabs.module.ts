@@ -14,7 +14,7 @@ const routes: Routes = [
     children: [
       {
         path: 'alert',
-        loadChildren: './pages/alert/alert.module#AlertPageModule'
+        loadChildren: '../alert/alert.module#AlertPageModule'
       },
       {
         path: 'action-sheet',
